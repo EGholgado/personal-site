@@ -1,16 +1,15 @@
 ---
-
+// index.astro ES
+import Layout from "../layouts/Main.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Erick Holgado">
+  <section class="flex flex-col gap-6 items-center text-center py-05">
+    <h1 class="text-6xl font-semibold mb-05 text-center">Erick Holgado</h1>
+    <h2 class="text-lg text-gray-600 dark:text-gray-300 max-w-xl leading-relaxed">
+      Ingeniero Industrial y Analista de Datos<br/>
+      Enfocado en automatización, análisis y transformación digital
+    </h2>
+
+  </section>
+</Layout>

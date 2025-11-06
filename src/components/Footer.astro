@@ -1,0 +1,20 @@
+---
+// src/components/Footer.astro
+---
+
+<footer class="bg-gray-100 dark:bg-neutral-900 text-gray-800 dark:text-gray-200 py-2 mt-8 border-t border-gray-300 dark:border-neutral-700">
+  <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+    
+    <!-- Texto -->
+    <p class="text-sm text-center md:text-left">
+      © {new Date().getFullYear()} Erick Holgado. Todos los derechos reservados.
+    </p>
+
+    <!-- Links -->
+    <div class="flex gap-4">
+      <a href="https://github.com/EGholgado" target="_blank" class="hover:text-blue-500 transition">GitHub</a>
+      <a href="https://www.linkedin.com/in/erick-holgado/" target="_blank" class="hover:text-blue-500 transition">LinkedIn</a>
+      <a href="mailto:erick.holgado@utec.edu.pe" class="hover:text-blue-500 transition">Email</a>
+    </div>
+  </div>
+</footer>
