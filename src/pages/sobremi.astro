@@ -1,36 +1,17 @@
 ---
 // sobremi.astro
 import Layout from "../layouts/Main.astro";
-
-const lang = Astro.url.searchParams.get('lang') === 'en' ? 'en' : 'es';
 ---
 
-<Layout title={lang === 'en' ? 'About Me' : 'Sobre mí'} lang={lang}>
-
+<Layout title="Sobre mí">
   <section class="flex flex-col gap-6 items-center text-center py-5">
-    <h1 class="text-6xl font-semibold mb-5 text-center">
-      {lang === 'en' ? 'About Me' : 'Sobre mí'}
-    </h1>
-
+    <h1 class="text-6xl font-semibold mb-5 text-center">Sobre mí</h1>
     <article class="prose prose-neutral dark:prose-invert max-w-none text-lg leading-relaxed">
-      {lang === 'en' ? (
-        <>
-          I am an Industrial Engineer, Data Analyst, Scrum Master, and volunteer. I hold a bachelor's degree in Industrial Engineering with a deep interest in data analysis and process automation to optimize performance and transform decision-making in organizational environments. I have developed high-impact visual solutions in Power BI, designed and implemented SQL Server databases, and worked with advanced statistical models for forecasting and trend analysis using R and Python. I am also certified as a Scrum Master, allowing me to apply agile methodologies to lead projects focused on continuous improvement, efficiency, and effective collaboration.
-          <br/><br/>
-          But my story didn’t start in a company or a spreadsheet. As a child, I had an intense, almost untamable imagination. My action figures came to life, the cities I built often ended in chaotic scenarios or total rebirth, and reality constantly alternated with worlds that only existed in my mind. I grew up, studied, learned programming, mathematics, finance, and methodologies—but that imagination never disappeared. It simply found new ways to express itself, now through data, technology, and ideas aimed at creating, improving, and transforming.
-          <br/><br/>
-          Sometimes I get lost in my thoughts, disconnecting briefly without anyone noticing, then returning fully present. It's part of how I analyze, project, imagine, and understand the world. I enjoy the process and live each moment with intention, balance, and curiosity. I like the color blue, the movie Shrek, and mint ice cream. I am a blend of logic, structure, and creativity, engineering and imagination; I am convinced that analysis and intuition are not opposites, but allies in building better things.
-        </>
-      ) : (
-        <>
-          Ingeniero Industrial, Analista de Datos, Scrum Master y voluntario. Soy bachiller en ingeniería industrial con un profundo interés en el análisis de datos y la automatización de procesos para optimizar el rendimiento y transformar la toma de decisiones en entornos organizacionales. He desarrollado soluciones visuales de alto impacto en Power BI, diseñado e implementado bases de datos en SQL Server, y trabajado con modelos estadísticos avanzados para pronósticos y análisis de tendencias utilizando R y Python. También cuento con certificación como Scrum Master, lo que me permite aplicar metodologías ágiles para liderar proyectos enfocados en la mejora continua, la eficiencia y la colaboración efectiva.
-          <br/><br/>
-          Pero mi historia no empieza en una empresa ni en una hoja de cálculo. Desde niño tuve una imaginación intensa, casi indomable. Mis figuras de acción cobraban vida, las ciudades que construía terminaban en escenarios caóticos o de renacimiento total, y la realidad se alternaba constantemente con mundos que solo existían en mi cabeza. Crecí, estudié, aprendí programación, matemáticas, finanzas y metodologías; pero esa imaginación nunca desapareció, solo encontró nuevas formas de expresarse, ahora a través de datos, tecnología e ideas que buscan crear, mejorar y transformar.
-          <br/><br/>
-          A veces me pierdo en mis pensamientos, desconectándome por instantes sin que nadie lo note, para luego regresar completamente presente. Es parte de cómo analizo, proyecto, imagino y entiendo el mundo. Disfruto el proceso y vivo cada momento con intención, equilibrio y curiosidad. Me gusta el color azul, las películas de Shrek y el helado de menta. Soy una mezcla de lógica, estructura y creatividad, ingeniería e imaginación; y estoy convencido de que el análisis y la intuición no son opuestos, sino aliados para construir cosas mejores.
-        </>
-      )}
+      Ingeniero Industrial, Analista de Datos, Scrum Master y voluntario. Soy bachiller en ingeniería industrial con un profundo interés en el análisis de datos y la automatización de procesos para optimizar el rendimiento y transformar la toma de decisiones en entornos organizacionales. He desarrollado soluciones visuales de alto impacto en Power BI, diseñado e implementado bases de datos en SQL Server, y trabajado con modelos estadísticos avanzados para pronósticos y análisis de tendencias utilizando R y Python. También cuento con certificación como Scrum Master, lo que me permite aplicar metodologías ágiles para liderar proyectos enfocados en la mejora continua, la eficiencia y la colaboración efectiva.
+      <br/><br/>
+      Pero mi historia no empieza en una empresa ni en una hoja de cálculo. Desde niño tuve una imaginación intensa, casi indomable. Mis figuras de acción cobraban vida, las ciudades que construía terminaban en escenarios caóticos o de renacimiento total, y la realidad se alternaba constantemente con mundos que solo existían en mi cabeza. Crecí, estudié, aprendí programación, matemáticas, finanzas y metodologías; pero esa imaginación nunca desapareció, solo encontró nuevas formas de expresarse, ahora a través de datos, tecnología e ideas que buscan crear, mejorar y transformar.
+      <br/><br/>
+      A veces me pierdo en mis pensamientos, desconectándome por instantes sin que nadie lo note, para luego regresar completamente presente. Es parte de cómo analizo, proyecto, imagino y entiendo el mundo. Disfruto el proceso y vivo cada momento con intención, equilibrio y curiosidad. Me gusta el color azul, las películas de Shrek y el helado de menta. Soy una mezcla de lógica, estructura y creatividad, ingeniería e imaginación; y estoy convencido de que el análisis y la intuición no son opuestos, sino aliados para construir cosas mejores.
     </article>
-
   </section>
 </Layout>
